@@ -1,9 +1,10 @@
 {
-  "name": "work",
+  "name": "My Profile",
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "typed.js": "^1.1.6"
   },
   "overrides": {
     "bootstrap-sass": {
