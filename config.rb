@@ -1,5 +1,13 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  # Optional Settings
+   deploy.remote   = 'https://github.com/saikatharryc/saikatharryc.github.io' # remote name or git url, default: origin
+   deploy.branch   = 'master' # default: gh-pages
+  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
+  deploy.commit_message = 'Deploying'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
+end
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
